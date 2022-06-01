@@ -33,6 +33,7 @@
           <span class="item">Contratos Vinculados</span>
         </a>
       </li>
+      <hr color="#0AA7C3" class="solid">
       <li>
         <a href="#">
           <span class="icon"><i class="pi pi-file"></i></span>
@@ -56,12 +57,22 @@
         <span class="icon"><i class="pi pi-angle-left"></i></span>
         <span class="item">Dados do funcionário</span>
       </div>
-      <div class="funcdata">
-        <ul>
-          <li>Informações</li>
-          <li>Contratos</li>
-          <li>Documentos</li>
-        </ul>
+      <nav class="slidemenu">
+        <label for="slide-item-1"><span>Informações</span></label>
+        <label for="slide-item-2"><span>Contratos</span></label>
+        <label for="slide-item-3"><span>Documentos</span></label>
+        <div class="slider">
+          <div class="bar"></div>
+        </div>
+      </nav>
+      <div class="modal-box">
+        <a href="#abrirModal">Open Modal</a>
+        <div id="abrirModal" class="modal">
+          <a href="#fechar" title="Fechar" class="fechar">x</a>
+          <h2>Janela Modal</h2>
+          <p>Esta é uma simples janela de modal.</p>
+          <p>Você pode fazer qualquer coisa aqui</p>
+        </div>
       </div>
     </div>
   </div>
