@@ -4,44 +4,44 @@
     <p class="logo">encargos</p>
     <ul>
       <li>
-        <a href="#">
+        <a href="javascript:;">
           <span class="icon"><i class="pi pi-upload"></i></span>
           <span class="item">Documentos</span>
         </a>
       </li>
       <li>
-        <a href="#" class="active">
+        <a href="javascript:;" class="active">
           <span class="icon"><i class="pi pi-users"></i></span>
           <span class="item">Funcionários</span>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="javascript:;">
           <span class="icon"><i class="pi pi-th-large"></i></span>
           <span class="item">Dashboards</span>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="javascript:;">
           <span class="icon"><i class="pi pi-chart-bar"></i></span>
           <span class="item">Relatórios</span>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="javascript:;">
           <span class="icon"><i class="pi pi-link"></i></span>
           <span class="item">Contratos Vinculados</span>
         </a>
       </li>
       <hr color="#0AA7C3" class="solid">
       <li>
-        <a href="#">
+        <a href="javascript:;">
           <span class="icon"><i class="pi pi-file"></i></span>
           <span class="item">Contratos</span>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="javascript:;">
           <span class="icon"><i class="pi pi-cog"></i></span>
           <span class="item">Configurações</span>
         </a>
@@ -52,7 +52,6 @@
   <div class="content">
     <h4 class="func">Funcionários</h4>
     <div class="content-container">
-      <router-outlet></router-outlet>
       <div class="info">
         <span class="icon"><i class="pi pi-angle-left"></i></span>
         <span class="item">Dados do funcionário</span>
@@ -65,15 +64,7 @@
           <div class="bar"></div>
         </div>
       </nav>
-      <div class="modal-box">
-        <a href="#abrirModal">Open Modal</a>
-        <div id="abrirModal" class="modal">
-          <a href="#fechar" title="Fechar" class="fechar">x</a>
-          <h2>Janela Modal</h2>
-          <p>Esta é uma simples janela de modal.</p>
-          <p>Você pode fazer qualquer coisa aqui</p>
-        </div>
-      </div>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

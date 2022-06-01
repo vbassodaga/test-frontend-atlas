@@ -1,0 +1,71 @@
+.modal-box {
+  width: 20.25rem;
+  height: 11.375rem;
+  border: 0.16rem dashed;
+  margin-top: 2.5rem;
+  margin-left: 3.9rem;
+  color: #0AA7C3;
+
+  a {
+    color: #0AA7C3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2rem;
+    margin-top: 4.5rem;
+    position: fixed;
+  }
+
+  a:link {
+    text-decoration: underline;
+  }
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(20, 20, 20, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.3s;
+
+  &>div {
+    width: 25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #F7F7F7;
+  }
+
+  h3 {
+    color: #5E5E5E;
+    font-size: 1rem;
+  }
+
+  p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5E5E5E;
+    font-size: 0.9rem;
+  }
+}
+
+.modal-close {
+  color: #5E5E5E;
+  line-height: 3.125rem;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 4.375rem;
+  text-decoration: none;
+
+  &:hover {
+    color: black;
+  }
+}

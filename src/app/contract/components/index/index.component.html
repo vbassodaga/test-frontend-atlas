@@ -1,1 +1,10 @@
-
+<div class="modal-box">
+  <a href="javascript:;" (click)="showModal = true">Clique para adicionar um contrato</a>
+</div>
+<div [ngClass]="showModal ? 'modal-window' : 'hidden'">
+  <div *ngIf="showModal">
+    <a href="javascript:;" (click)="showModal = false" title="Close" class="modal-close">X</a>
+    <h3>Novo contrato</h3>
+    <p>Novo contrato aqui</p>
+  </div>
+</div>
