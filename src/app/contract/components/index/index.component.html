@@ -1,5 +1,7 @@
 <div class="modal-box">
-  <a href="javascript:;" (click)="showModal = true"><i class="pi pi-plus-circle"></i>Clique para adicionar um contrato</a>
+  <a href="javascript:;" (click)="showModal = true"><i style="margin-right: 0.766rem;"
+      class="pi pi-plus-circle"></i>Clique para adicionar um
+    contrato</a>
 </div>
 <div [ngClass]="showModal ? 'modal-window' : 'hidden'">
   <div *ngIf="showModal">
@@ -116,5 +118,9 @@
         <option>Inativo</option>
       </select>
     </form>
+    <div class="modal-footer">
+      <button type="button" class="btn-cancel">Cancelar</button>
+      <button type="button" class="btn-save">Salvar</button>
+    </div>
   </div>
 </div>
