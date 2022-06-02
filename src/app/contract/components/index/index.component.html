@@ -1,10 +1,120 @@
 <div class="modal-box">
-  <a href="javascript:;" (click)="showModal = true">Clique para adicionar um contrato</a>
+  <a href="javascript:;" (click)="showModal = true"><i class="pi pi-plus-circle"></i>Clique para adicionar um contrato</a>
 </div>
 <div [ngClass]="showModal ? 'modal-window' : 'hidden'">
   <div *ngIf="showModal">
-    <a href="javascript:;" (click)="showModal = false" title="Close" class="modal-close">X</a>
+    <a href="javascript:;" (click)="showModal = false" title="Close" class="modal-close"><i class="pi pi-times"></i></a>
     <h3>Novo contrato</h3>
-    <p>Novo contrato aqui</p>
+    <form>
+      <div class="minibox">Cliente</div>
+      <select>
+        <option>Nome do Cliente</option>
+        <option>Carlos Neto</option>
+        <option>João Silva</option>
+        <option>Ana Alice</option>
+      </select>
+    </form>
+    <form>
+      <div class="minibox">Unidade</div>
+      <select>
+        <option>Nome da Unidade</option>
+        <option>Unidade A</option>
+        <option>Unidade B</option>
+        <option>Unidade C</option>
+      </select>
+    </form>
+    <form>
+      <div class="minibox">Categoria</div>
+      <select>
+        <option>Nome da Categoria</option>
+        <option>Categoria 1</option>
+        <option>Categoria 2</option>
+        <option>Categoria 3</option>
+        <option>Categoria 4</option>
+      </select>
+    </form>
+    <form>
+      <div class="minibox">Função</div>
+      <select>
+        <option>Nome da Função</option>
+        <option>Eletricista</option>
+        <option>Faxineiro(a)</option>
+        <option>Segurança</option>
+        <option>Recepcionista</option>
+      </select>
+    </form>
+    <form>
+      <div class="minibox">Vigência</div>
+      <select>
+        <option>XX/XX/XXXX - XX/XX/XXXX</option>
+        <option>01/01/2022 - 01/01/2023</option>
+        <option>15/06/2022 - 31/12/2022</option>
+        <option>01/01/2022 - 01/01/2024</option>
+      </select>
+    </form>
+    <form>
+      <div class="minibox">Salário</div>
+      <input type="number" min="0,00" max="10000,00" step="1,00" placeholder="R$ X.XXX,XX">
+    </form>
+    <form>
+      <div class="minibox">Escala</div>
+      <input type="text" placeholder="12x36">
+    </form>
+    <form>
+      <div class="minibox">Início da jornada</div>
+      <input type="time" placeholder="00:00">
+    </form>
+    <form>
+      <div class="minibox">Término da jornada</div>
+      <input type="time" placeholder="00:00">
+    </form>
+    <form>
+      <div class="minibox">Intrajornada descansada</div>
+      <input type="time" placeholder="00:00">
+    </form>
+    <form>
+      <div class="minibox">Intrajornada remunerada</div>
+      <input type="time" placeholder="00:00">
+    </form>
+    <form>
+      <div class="minibox">Horas extras</div>
+      <input type="time" placeholder="00:00">
+    </form>
+    <form>
+      <div class="minibox">Trabalha nos feriados</div>
+      <select>
+        <option>Sim</option>
+        <option>Não</option>
+      </select>
+    </form>
+    <form>
+      <div class="minibox">Insalubridade (%)</div>
+      <select>
+        <option>0%</option>
+        <option>10%</option>
+        <option>20%</option>
+        <option>40%</option>
+      </select>
+    </form>
+    <form>
+      <div class="minibox">Periculosidade (%)</div>
+      <select>
+        <option>0%</option>
+        <option>10%</option>
+        <option>20%</option>
+        <option>30%</option>
+      </select>
+    </form>
+    <form>
+      <div class="minibox">Gratificação/Acúmulo de funções</div>
+      <input type="number" placeholder="---">
+    </form>
+    <form>
+      <div class="minibox">Situação</div>
+      <select>
+        <option>Ativo</option>
+        <option>Inativo</option>
+      </select>
+    </form>
   </div>
 </div>
