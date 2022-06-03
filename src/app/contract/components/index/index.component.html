@@ -1,7 +1,36 @@
-<div class="modal-box">
-  <a href="javascript:;" (click)="showModal = true"><i style="margin-right: 0.766rem;"
-      class="pi pi-plus-circle"></i>Clique para adicionar um
-    contrato</a>
+<div class="grid-container">
+  <div class="modal-box-contents">
+    <ul>
+      <a href="javascript:;"><i class="pi pi-trash"></i></a>
+      <a href="javascript:;" (click)="showModal = true"><i class="pi pi-pencil"></i></a>
+      <li class="lititle">Cliente A</li>
+      <li class="li-text"><span>Unidade</span><span class="li-bold">Nome da Unidade</span></li>
+      <hr class="solid">
+      <li class="li-text"><span>Categoria</span><span class="li-bold">Nome da Categoria</span></li>
+      <hr class="solid">
+      <li class="li-text"><span>Validade</span><span class="li-bold">XX/XX/XXXX - XX/XX/XXXX</span></li>
+      <hr class="solid">
+    </ul>
+  </div>
+  <div class="modal-box-contents">
+    <ul>
+      <a href="javascript:;"><i class="pi pi-trash"></i></a>
+      <a href="javascript:;" (click)="showModal = true"><i class="pi pi-pencil"></i></a>
+      <li class="lititle">Cliente B</li>
+      <li class="li-text"><span>Unidade</span><span class="li-bold">Nome da Unidade</span></li>
+      <hr class="solid">
+      <li class="li-text"><span>Categoria</span><span class="li-bold">Nome da Categoria</span></li>
+      <hr class="solid">
+      <li class="li-text"><span>Validade</span><span class="li-bold">XX/XX/XXXX - XX/XX/XXXX</span></li>
+      <hr class="solid">
+    </ul>
+  </div>
+  <div class="modal-box">
+    <a href="javascript:;" (click)="showModal = true">
+      <i class="pi pi-plus-circle"></i>
+      <span>Clique para adicionar um contrato</span>
+    </a>
+  </div>
 </div>
 <div [ngClass]="showModal ? 'modal-window' : 'hidden'">
   <div *ngIf="showModal">
